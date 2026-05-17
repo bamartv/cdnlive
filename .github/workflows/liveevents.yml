@@ -34,7 +34,7 @@ jobs:
       run: playwright install chromium --with-deps
 
     - name: Run Scraper Script
-      run: python liveevents.py
+      run: python src/liveevents.py
 
     - name: Commit and Push Playlist
       run: |
