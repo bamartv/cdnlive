@@ -19,6 +19,7 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
+    - run: echo "Cron job is running"
 
     - name: Set up Python
       uses: actions/setup-python@v5
