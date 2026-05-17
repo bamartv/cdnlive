@@ -18,9 +18,7 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
-      with:
-        # Fetch depth 0 ensures we get the full git history for a clean rebase
-        fetch-depth: 0
+    - run: echo "Cron job is running"
 
     - name: Set up Python
       uses: actions/setup-python@v5
